@@ -747,11 +747,11 @@ html.theme-light .nav-links {
 
 .resume-grid {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   .resume-grid {
     grid-template-columns: 1fr;
   }
@@ -776,6 +776,35 @@ html.theme-light .nav-links {
 .list {
   margin: 0.65rem 0 0 1.1rem;
   color: var(--muted);
+}
+
+/* Experience section styling */
+.experience-list li {
+  margin-bottom: 0.5rem;
+}
+
+.experience-list li::first-letter {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.experience-list li strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.experience-card .card-meta {
+  margin-top: 1rem;
+}
+
+/* Education section styling */
+.education-list li {
+  margin-bottom: 0.5rem;
+}
+
+.education-list li strong {
+  font-weight: 600;
+  color: var(--text);
 }
 
 /* ---------------------------
